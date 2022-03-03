@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>WhatsApp</title>
+  </head>
+  <body>
+    <!-- main outer container -->
+    <div class="outerContainer">
+      <!-- left section of the inner container -->
+      <div class="leftSection">
+        <!-- header part of the left section -->
+        <div class="header">
+          <span id="logoLeft">
+            <img
+              src="https://i.ytimg.com/vi/4mXJCUXzSWo/maxresdefault.jpg"
+              alt="Logo"
+            />
+          </span>
+          <span id="logoRight">
+            <i class="fa-solid fa-spinner"></i>
+            <i class="fa-solid fa-message"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </span>
+        </div>
+        <!-- header part ends -->
+        <!-- search bar  -->
+        <div id="searchBar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search or start new chat"
+          />
+        </div>
+        <div id="nameList">
+          <ul>
+            <li>
+              <div class="liLeft">
+                <img
+                  src="https://a-static.besthdwallpaper.com/boruto-naruto-next-generation-naruto-uzumaki-baryon-mode-4k-wallpaper-3554x1999-80686_53.jpg"
+                  alt="Logo"
+                />
+              </div>
+              <div class="liContent">
+                <div class="name">
+                  <p id="name">Uzumaki Naruto</p>
+                  <p id="time">2:43 pm</p>
+                </div>
+
+                <div class="text">
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="liLeft">
+                <img
+                  src="https://images3.alphacoders.com/116/1166167.png"
+                  alt="Logo"
+                />
+              </div>
+              <div class="liContent">
+                <div class="name">
+                  <p id="name">Uchiha Sasuke</p>
+                  <p id="time">2:43 pm</p>
+                </div>
+
+                <div class="text">
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="liLeft">
+                <img
+                  src="https://www.whatspaper.com/wp-content/uploads/2021/12/kakashi-hatake-wallpaper-whatspaper-6.jpg"
+                  alt="Logo"
+                />
+              </div>
+              <div class="liContent">
+                <div class="name">
+                  <p id="name">Hatake Kakashi</p>
+                  <p id="time">2:43 pm</p>
+                </div>
+
+                <div class="text">
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="liLeft">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="Logo"
+                />
+              </div>
+              <div class="liContent">
+                <div class="name">
+                  <p id="name">Uchiha Obito</p>
+                  <p id="time">2:43 pm</p>
+                </div>
+
+                <div class="text">
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="liLeft">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="Logo"
+                />
+              </div>
+              <div class="liContent">
+                <div class="name">
+                  <p id="name">Uchiha Itachi</p>
+                  <p id="time">2:43 pm</p>
+                </div>
+
+                <div class="text">
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="liLeft">
+                <img
+                  src="https://i.pinimg.com/originals/d4/e1/f9/d4e1f9cc59a71c42f38daf63cbcf361d.png"
+                  alt="Logo"
+                />
+              </div>
+              <div class="liContent">
+                <div class="name">
+                  <p id="name">Namikaze Minato</p>
+                  <p id="time">2:43 pm</p>
+                </div>
+
+                <div class="text">
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="liLeft">
+                <img
+                  src="https://i.pinimg.com/236x/38/ab/dd/38abddca59eab5396b0e79867f5c9786.jpg"
+                  alt="Logo"
+                />
+              </div>
+              <div class="liContent">
+                <div class="name">
+                  <p id="name">Senju Hashirama</p>
+                  <p id="time">2:43 pm</p>
+                </div>
+
+                <div class="text">
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="liLeft">
+                <img
+                  src="https://wallpapercave.com/wp/wp1821788.png"
+                  alt="Logo"
+                />
+              </div>
+              <div class="liContent">
+                <div class="name">
+                  <p id="name">Senju Tobirama</p>
+                  <p id="time">2:43 pm</p>
+                </div>
+
+                <div class="text">
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="liLeft">
+                <img
+                  src="https://wallpapercave.com/wp/wp2787469.jpg"
+                  alt="Logo"
+                />
+              </div>
+              <div class="liContent">
+                <div class="name">
+                  <p id="name">Jiraya Sensei</p>
+                  <p id="time">2:43 pm</p>
+                </div>
+
+                <div class="text">
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="liLeft">
+                <img
+                  src="https://www.desktopbackground.org/p/2011/11/07/293460_orochimaru-by-lamp3r-on-deviantart_1024x768_h.png"
+                  alt="Logo"
+                />
+              </div>
+              <div class="liContent">
+                <div class="name">
+                  <p id="name">Orochimaru</p>
+                  <p id="time">2:43 pm</p>
+                </div>
+
+                <div class="text">
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="liLeft">
+                <img
+                  src="https://www.desktopbackground.org/p/2011/11/07/293460_orochimaru-by-lamp3r-on-deviantart_1024x768_h.png"
+                  alt="Logo"
+                />
+              </div>
+              <div class="liContent">
+                <div class="name">
+                  <p id="name">Orochimaru</p>
+                  <p id="time">2:43 pm</p>
+                </div>
+
+                <div class="text">
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="liLeft">
+                <img
+                  src="https://www.desktopbackground.org/p/2011/11/07/293460_orochimaru-by-lamp3r-on-deviantart_1024x768_h.png"
+                  alt="Logo"
+                />
+              </div>
+              <div class="liContent">
+                <div class="name">
+                  <p id="name">Orochimaru</p>
+                  <p id="time">2:43 pm</p>
+                </div>
+
+                <div class="text">
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="liLeft">
+                <img
+                  src="https://www.desktopbackground.org/p/2011/11/07/293460_orochimaru-by-lamp3r-on-deviantart_1024x768_h.png"
+                  alt="Logo"
+                />
+              </div>
+              <div class="liContent">
+                <div class="name">
+                  <p id="name">Orochimaru</p>
+                  <p id="time">2:43 pm</p>
+                </div>
+
+                <div class="text">
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="liLeft">
+                <img
+                  src="https://www.desktopbackground.org/p/2011/11/07/293460_orochimaru-by-lamp3r-on-deviantart_1024x768_h.png"
+                  alt="Logo"
+                />
+              </div>
+              <div class="liContent">
+                <div class="name">
+                  <p id="name">Orochimaru</p>
+                  <p id="time">2:43 pm</p>
+                </div>
+
+                <div class="text">
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="liLeft">
+                <img
+                  src="https://www.desktopbackground.org/p/2011/11/07/293460_orochimaru-by-lamp3r-on-deviantart_1024x768_h.png"
+                  alt="Logo"
+                />
+              </div>
+              <div class="liContent">
+                <div class="name">
+                  <p id="name">Orochimaru</p>
+                  <p id="time">2:43 pm</p>
+                </div>
+
+                <div class="text">
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="liLeft">
+                <img
+                  src="https://www.desktopbackground.org/p/2011/11/07/293460_orochimaru-by-lamp3r-on-deviantart_1024x768_h.png"
+                  alt="Logo"
+                />
+              </div>
+              <div class="liContent">
+                <div class="name">
+                  <p id="name">Orochimaru</p>
+                  <p id="time">2:43 pm</p>
+                </div>
+
+                <div class="text">
+                  <p></p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+       <!-- left section-inner container ends -->
+        <!-- *************RIGHT SECTION************** -->
+      <div class="rightSection">
+          <div class="headerRight">
+                <span id="logoleft">
+                  <img
+                    src="https://i.ytimg.com/vi/4mXJCUXzSWo/maxresdefault.jpg"
+                    alt="Logo"
+                  />
+                </span>
+                <div id="memberName">
+                   <p id="Name">Lorem Ipsum</p>
+                   <p id="online">Online</p>
+                </div>
+              <div id="headerRight">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+          </div>
+          <div class="chatDisplay">
+
+          </div>
+          <div class="footer">
+            <div id="leftIcon">
+            <i class="fa-solid fa-face-smile"></i>
+            <i class="fa-solid fa-paperclip"></i>
+          </div>
+           <div id="type">
+             <input type="text" name="type" placeholder="Type a message">
+           </div>
+           <div id="rightIcon">
+            <i class="fa-solid fa-microphone"></i>
+           </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- script tags -->
+    <script
+      src="https://kit.fontawesome.com/c02eb88e40.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
